@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>True Shope</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="app.py">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #fff;
+            color: #333;
+        }
+
+        header {
+            background: #fff;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2f80ed;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input {
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .hero {
+            background-color: #2f80ed;
+            color: #fff;
+            padding: 50px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hero-text {
+            max-width: 50%;
+        }
+
+        .hero-text h1 {
+            font-size: 36px;
+        }
+
+        .hero-text p {
+            margin: 20px 0;
+        }
+
+        .hero-text button {
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #2f80ed;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .categories {
+            padding: 40px 30px;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .category {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            width: 150px;
+        }
+
+        .featured {
+            padding: 30px;
+        }
+
+        .products {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #111827;
+            color: #fff;
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-col {
+            flex: 1;
+            margin: 10px;
+        }
+
+        .footer-col h4 {
+            margin-bottom: 15px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li a {
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            margin: 5px 0;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            color: #bbb;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">True Shope</div>
+        <nav>
+            <ul>
+                <li><a href="C:\Users\jishn\OneDrive\ドキュメント\e-commerce project\Home">Home</a></li>
+                <li><a href="C:\Users\jishn\OneDrive\ドキュメント\e-commerce project\Categories">Categories</a></li>
+                <li><a href="C:\Users\jishn\OneDrive\ドキュメント\e-commerce project\Deals">Deals</a></li>
+                <li><a href="C:\Users\jishn\OneDrive\ドキュメント\e-commerce project\Cart">Cart</a></li>
+                <li><a href="C:\Users\jishn\OneDrive\ドキュメント\e-commerce project\Contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search products...">
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Welcome to True Shope</h1>
+            <p>Discover amazing products at unbeatable prices</p>
+            <button><span>Shop Now</span></button>
+        </div>
+        <div class="hero-image">
+            <img src="https://i.imgur.com/RG7bTgR.png" alt="Floating products" width="300">
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="category">👚<br>Fashion</div>
+        <div class="category">📱<br>Electronics</div>
+        <div class="category">🏠<br>Home & Living</div>
+        <div class="category">💍<br>Jewelry</div>
+    </section>
+
+    <section class="featured">
+        <h2>Featured Products</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://i.imgur.com/LXxQxGv.png" alt="Luxury Watch">
+                <h3>Luxury Watch</h3>
+                <p>Premium timepieces with elegant design</p>
+                <strong>$299.00</strong>
+            </div>
+            <div class="product">
+                <img src="https://i.imgur.com/VJP1JVP.png" alt="Wireless Earbuds">
+                <h3>Wireless Earbuds</h3>
+                <p>High-quality wireless audio</p>
+                <strong>$149.00</strong>
+            </div>
+            <div class="product">
+                <img src="https://i.imgur.com/vJz8hrm.png" alt="Leather Handbag">
+                <h3>Leather Handbag</h3>
+                <p>Stylish and spacious design</p>
+                <strong>$199.00</strong>
+            </div>
+            <div class="product">
+                <img src="https://i.imgur.com/fAgZL8T.png" alt="Sport Sneakers">
+                <h3>Sport Sneakers</h3>
+                <p>Comfortable and trendy</p>
+                <strong>$89.50</strong>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-col">
+            <h4>True Shope</h4>
+            <p>Your premium shopping destination with unbeatable deals and quality products.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="About US">About Us</a></li>
+                <li><a href="1234567890">Contact</a></li>
+                <li><a href="FAQs">FAQs</a></li>
+                <li><a href="Privacy Policy">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Customer Service</h4>
+            <ul>
+                <li><a href="Shipping Info">Shipping Info</a></li>
+                <li><a href="Returns">Returns</a></li>
+                <li><a href="Order Status">Order Status</a></li>
+                <li><a href="Payment Options">Payment Options</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Connect With Us</h4>
+            <p>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </p>
+        </div>
+    </footer>
+
+    <div class="footer-bottom">
+        &copy; 2025 True Shope. All rights reserved.
+    </div>
+
+    <script>
+        // Search functionality
+        document.querySelector(".search-bar input").addEventListener("keypress", function (e) {
+            if (e.key === "Enter") {
+                alert("You searched for: " + this.value);
+            }
+        });
+
+        // Add to Cart simulation
+        const addToCartButtons = document.querySelectorAll(".product");
+        addToCartButtons.forEach(product => {
+            product.addEventListener("click", () => {
+                alert(product.querySelector("h3").innerText + " added to cart!");
+            });
+        });
+    </script>
+</body>
+
+</html>
