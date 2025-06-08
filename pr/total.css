@@ -1,0 +1,305 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Global Reset and Font Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* General Body Styling */
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+/* ================== HEADER ================== */
+
+/* Header section with logo, nav, etc. */
+header {
+    background: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+/* Logo styling */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2f80ed;
+}
+
+/* Navigation list */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+/* Navigation links */
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+     
+ /* Basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    /* Styling for form elements */
+    label, input, select {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    /* Hide radio buttons for star rating */
+    .stars input {
+      display: none;
+    }
+
+    /* Style for stars */
+    .stars label {
+      float: right;               /* Right-align the stars */
+      padding: 5px;
+      font-size: 24px;            /* Larger star size */
+      color: #ccc;                /* Default grey color */
+      transition: all 0.2s;       /* Smooth color transition */
+      cursor: pointer;
+    }
+
+    /* Color stars when selected or hovered */
+    .stars input:checked ~ label,
+    .stars label:hover,
+    .stars label:hover ~ label {
+      color: gold;                /* Highlighted color */
+    }
+
+
+
+
+
+/* Button style (like Sign In / Shop Now) */
+.btn5 {
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    box-shadow: 0 5px #c0392b;
+    cursor: pointer;
+}
+
+/* Button pressed effect */
+.btn5:active {
+    box-shadow: 0 2px #c0392b;
+    transform: translateY(3px);
+}
+
+/* ================== SEARCH BAR ================== */
+
+/* Search bar container */
+.search-bar {
+    position: relative;
+    width: 250px;
+}
+
+/* Search input field */
+.search-bar input {
+    width: 100%;
+    padding: 10px 10px 10px 35px; /* left space for icon */
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* Search icon inside input */
+.search-bar::before {
+    content: '🔍';
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #888;
+}
+
+/* ================== HERO SECTION ================== */
+
+/* Hero section background and layout */
+.hero {
+    background-color: #2f80ed;
+    color: #ede9e9;
+    padding: 50px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Text content inside hero */
+.hero-text {
+    max-width: 50%;
+}
+
+/* Hero heading */
+.hero-text h1 {
+    font-size: 36px;
+}
+
+/* Hero paragraph spacing */
+.hero-text p {
+    margin: 20px 0;
+}
+
+/* Hero button style */
+.hero-text button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #2f80ed;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* ================== CATEGORIES SECTION ================== */
+
+/* Container to center content */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Categories wrapper */
+.categories {
+    padding: 40px 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+}
+
+/* Single category box */
+.categories div {
+    background-color: #f0f0f0;
+    padding: 30px 20px;
+    border-radius: 10px;
+    width: 200px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover effect for category boxes */
+.categories div:hover {
+    background-color: #ddd;
+    transform: translateY(-5px);
+}
+
+/* Link inside category box */
+.categories a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Optional: specific category box if using class */
+.category {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+}
+
+/* ================== FEATURED PRODUCTS ================== */
+
+/* Featured section padding */
+.featured {
+    padding: 30px;
+}
+
+/* Products grid */
+.products {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Individual product card */
+.product {
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Product image styling */
+.product img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* ================== FOOTER ================== */
+
+/* Footer background and layout */
+footer {
+    font-family: 'Poppins', sans-serif;
+    background-color: #111827;
+    color: #fff;
+    padding: 0%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Each footer column */
+.footer-col {
+    flex: 1;
+    color: #333;
+    margin: 10px;
+}
+
+/* Footer column title */
+.footer-col h4 {
+    margin-bottom: 15px;
+    color: #d9ff00;
+}
+
+/* Footer list style removal */
+.footer-col ul {
+    list-style: none;
+}
+
+
+
+/* Footer links */
+.footer-col ul li a { 
+    font-family: 'lobser', sans-serif;
+
+    text-decoration: none;
+    color: #e5e5e5;
+    display: block;
+    margin: 5px 0;
+}
+
+/* Footer bottom copyright text */
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    color: #000000;
+}
